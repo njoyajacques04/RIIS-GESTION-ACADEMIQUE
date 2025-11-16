@@ -1,0 +1,155 @@
+/* ===========================
+   PAGE DE CONNEXION
+   =========================== */
+
+/* GENERAL
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #001638, #011d3b, #4cacf5);
+    color: #ffffff;
+}
+
+.login-page {
+    background:
+    margin: 0;
+    font-family: Arial, sans-serif;
+}*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #001638; /* Couleur simple */
+    color: #ffffff;
+}
+
+/* HEADER */
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    border-radius: 67px;
+    width: 60px;   
+    height: 60px; 
+    object-fit: contain;
+}
+/* .login-logo { 
+    width: 60px;
+}
+
+.login-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+ }*/
+
+/* CONTAINER */
+.login-container {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* FORMULAIRE */
+.login-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* BOUTON */
+.btn-login {
+    background: #004080;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: #003366;
+}
+
+/* MOT DE PASSE OUBLIE */
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+/* Flou de tout l'arrière-plan */
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(05px);   /* intensité du flou */
+    background: rgba(0, 0, 0, 0.3); /* léger voile sombre */
+    z-index: 1;
+}
+
+/* Le container reste au-dessus du flou */
+.login-container, 
+.login-header {
+    position: relative;
+    z-index: 2;
+}
+ /* image du background*/
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../image/photo_RIIS.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.1; /* transparence — à ajuster */
+  z-index: -1;
+}
