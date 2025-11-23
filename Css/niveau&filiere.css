@@ -1,0 +1,49 @@
+.niveaux-section {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.niveaux-section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #0a4ba3;
+    margin-bottom: 30px;
+}
+
+.niveaux-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.niveau-card {
+    background: #ffffff;
+    width: 48%;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid #e6e6e6;
+}
+
+.niveau-card h3 {
+    font-size: 22px;
+    color: #0a4ba3;
+    margin-bottom: 15px;
+}
+
+.niveau-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.niveau-card ul li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+}
+
+.niveau-card ul li:last-child {
+    border-bottom: none;
+}

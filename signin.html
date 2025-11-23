@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - RIIS E-learning</title>
+    <link rel="stylesheet" href="css/login.css"> <!-- même CSS que la page login -->
+</head>
+<body class="login-page">
+
+    <!-- Image de fond -->
+    <div class="bg-image"></div>
+    <div class="background-blur"></div>
+
+    <!-- HEADER avec logo -->
+    <header class="login-header">
+        <div class="logo">
+            <img src="image/logo.png" alt="logo RIIS">
+        </div>
+    </header>
+
+    <!-- Conteneur du formulaire d'inscription -->
+    <div class="login-container">
+
+        <!-- FORMULAIRE UNIQUE -->
+        <form id="inscriptionForm" method="POST" action="register.php">
+
+            <h2>Inscription</h2>
+
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">sexe</label>
+                <input type="text" id="sexe" name="sexe" placeholder="sexe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="exemple@riis.cm" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mot_de_passe">Mot de passe</label>
+                <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="••••••••" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="text" id="telephone" name="telephone" placeholder="Téléphone">
+            </div>
+
+            <div class="form-group">
+                <label for="date_naissance">Date de naissance</label>
+                <input type="date" id="date_naissance" name="date_naissance">
+            </div>
+
+            <div class="form-group">
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse" placeholder="Adresse">
+            </div>
+
+            <div class="form-group">
+                <label for="type_utilisateur">Vous êtes :</label>
+                <select id="type_utilisateur" name="type_utilisateur" required>
+                    <option value="" disabled selected>Choisissez votre statut</option>
+                    <option value="Etudiant">Étudiant</option>
+                    <option value="Enseignant">Enseignant</option>
+                    <option value="Administrateur">Administrateur</option>
+                </select>
+
+                <!-- Champs étudiants, visibles uniquement si type = Etudiant -->
+                <div id="etudiantFields" style="display:none; margin-top:20px;">
+                    <label for="cycle">Cycle :</label>
+                    <select id="cycle" name="cycle">
+                        <option value="" disabled selected>Choisissez votre cycle</option>
+                        <option value="prepa">Cycle Prépa</option>
+                        <option value="lmd">Cycle LMD</option>
+                    </select>
+
+                    <div id="niveauContainer" style="margin-top:10px; display:none;">
+                        <label for="niveau">Niveau :</label>
+                        <select id="niveau" name="niveau"></select>
+                    </div>
+
+                    <div id="filiereContainer" style="margin-top:10px; display:none;">
+                        <label for="filiere">Filière :</label>
+                        <select id="filiere" name="filiere"></select>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn-login">S'inscrire</button>
+        </form>
+        <!-- FIN DU FORMULAIRE -->
+
+        <!-- Section "Poursuivre comme invité" -->
+        <div class="guest-section">
+            <p>ou</p>
+            <a href="page_invite.php" class="guest-button">Poursuivre comme invité</a>
+        </div>
+
+    </div>
+
+    <!-- LIEN VERS LE JS -->
+    <script src="Js/script.js"></script>
+
+</body>
+</html>

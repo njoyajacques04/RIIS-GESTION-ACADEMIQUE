@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Enseignant</title>
+
+    <!-- CSS commun pour le dashboard -->
+    <link rel="stylesheet" href="Css/etudiant.css">
+
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+    <div class="sidebar">
+
+        <a href="#" onclick="showSection('dashboard-section')">
+            <i class="fa-solid fa-gauge"></i>
+            Tableau de bord
+        </a>
+
+        <a href="#" onclick="showSection('cours-section')">
+            <i class="fa-solid fa-book"></i>
+            Mes Cours
+        </a>
+
+        <a href="#" onclick="showSection('time-section')">
+            <i class="fa-solid fa-calendar-days"></i>
+            Emploi du temps
+        </a>
+
+        <a href="#" onclick="showSection('notes-section')">
+            <i class="fa-solid fa-clipboard-list"></i>
+            Évaluations à corriger
+        </a>
+
+        <a href="#" onclick="showSection('profil-section')">
+            <i class="fa-solid fa-user-tie"></i>
+            Profil Enseignant
+        </a>
+
+        <a href="#" onclick="showSection('messages-section')">
+            <i class="fa-solid fa-envelope"></i>
+            Messages
+        </a>
+
+        <a href="#" onclick="showSection('parametres-section')">
+            <i class="fa-solid fa-gear"></i>
+            Paramètres
+        </a>
+
+        <a href="#" class="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Déconnexion
+        </a>
+
+    </div>
+    <!-- ================= FIN SIDEBAR ================= -->
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+        <div id="dashboard-section">
+            <!-- ================= TOPBAR ================= -->
+    <header class="topbar">
+        <h2>Dashboard Enseignant</h2>
+
+        <div class="search-box">
+            <input type="text" placeholder="Rechercher un étudiant, une classe...">
+        </div>
+
+        <div class="user-info">
+            <img src="image/logo.png" alt="Profil Enseignant">
+            <div>
+                <b>Njoya Jacques</b><br>
+                Enseignant
+            </div>
+        </div>
+    </header>
+    <!-- ================= FIN TOPBAR ================= -->
+
+
+<!-- ================= stats-cards ================= -->
+
+    <section class="stats">
+
+    <!-- Séances prévues cette semaine -->
+    <div class="card">
+        <div class="info">
+            <h1>06</h1>
+            <p>Séances prévues</p>
+        </div>
+        <i class="fa-solid fa-calendar-days icon"></i>
+    </div>
+
+    <!-- Étudiants inscrits -->
+    <div class="card">
+        <div class="info">
+            <h1>152</h1>
+            <p>Étudiants inscrits</p>
+        </div>
+        <i class="fa-solid fa-users icon"></i>
+    </div>
+
+    <!-- Évaluations à corriger -->
+    <div class="card">
+        <div class="info">
+            <h1>08</h1>
+            <p>Évaluations à corriger</p>
+        </div>
+        <i class="fa-solid fa-clipboard-list icon"></i>
+    </div>
+
+    <!-- Messages / Notifications -->
+    <div class="card highlight">
+        <div class="info">
+            <h1>03</h1>
+            <p>Messages non lus</p>
+        </div>
+        <i class="fa-solid fa-envelope icon"></i>
+    </div>
+
+</section>
+
+
+<!-- ================= Fin stats-cards ================= -->
+
+
+<!-- === CONTENT GRID === -->
+<div class="content-grid">
+
+    <!-- LEFT COLUMN -->
+    <div class="left-column">
+
+        <!-- Planning -->
+        <div class="card">
+            <h2>Prochains cours</h2>
+            <ul class="list">
+                <li>Maths — Lundi 10h</li>
+                <li>Physique — Mardi 14h</li>
+                <li>Informatique — Jeudi 08h</li>
+            </ul>
+        </div>
+
+        <!-- Devoirs à corriger -->
+        <div class="card">
+            <h2>Devoirs à corriger</h2>
+            <ul class="list">
+                <li>Groupe A — Devoir n°3</li>
+                <li>Groupe C — Projet final</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT COLUMN -->
+    <div class="right-column">
+
+        <!-- === SECTION COMMUNICATIONS PROFESSEUR === -->
+        <section class="teacher-messages">
+            <h2>Dernières communications</h2>
+
+            <div class="message-card">
+                <h3>Note de service – 20/11/2025</h3>
+                <p>Rappel concernant la mise à jour des notes du semestre.</p>
+                <span class="date">20/11/2025</span>
+            </div>
+
+            <div class="message-card">
+                <h3>Message de la direction</h3>
+                <p>Réunion pédagogique prévue vendredi à 14h.</p>
+                <span class="date">18/11/2025</span>
+            </div>
+
+            <div class="message-card">
+                <h3>Rappel administratif</h3>
+                <p>Merci de déposer vos notes avant le vendredi 22/11/2025.</p>
+                <span class="date">17/11/2025</span>
+            </div>
+        </section>
+
+
+        <!-- Actions rapides -->
+        <div class="card">
+            <h2>Actions rapides</h2>
+            <div class="quick-actions">
+                <button>Ajouter un cours</button>
+                <button>Créer un test</button>
+                <button>Envoyer une annonce</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+        </div>
+        <div id="cours-section" style="display:none;"></div>
+        <div id="time-section" style="display:none;"></div>
+        <div id="notes-section" style="display:none;"></div>
+        <div id="profil-section" style="display:none;"></div>
+        <div id="messages-section" style="display:none;"></div>
+        <div id="parametres-section" style="display:none;"></div>
+
+    </main>
+    <!-- ================= FIN MAIN ================= -->
+
+    <script src="Js/script.js"></script>
+
+</body>
+</html>
