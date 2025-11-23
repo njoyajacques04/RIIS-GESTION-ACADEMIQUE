@@ -1,0 +1,99 @@
+/* Style du corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Police globale */
+    background-color: #f5f5f5;      /* Couleur de fond claire */
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    border-radius: 67px;
+    width: 60px;   
+    height: 60px; 
+    object-fit: contain;
+
+/* Conteneur central pour le formulaire */
+.container {
+    width: 400px;                  /* Largeur fixe */
+    margin: 50px auto;             /* Centré horizontalement et marges verticales */
+    background-color: #fff;        /* Fond blanc pour le formulaire */
+    padding: 20px 30px;            /* Padding intérieur */
+    border-radius: 8px;            /* Bords arrondis */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombre légère */
+}
+
+/* Style du titre du formulaire */
+form h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style des labels */
+label {
+    display: block;    /* Chaque label sur une ligne */
+    margin: 10px 0 5px; /* Marges autour des labels */
+}
+
+/* Style des champs input */
+input, select {
+    width: 100%;               /* Prend toute la largeur */
+    padding: 10px;             /* Padding intérieur */
+    margin-bottom: 10px;       /* Marge en bas */
+    border-radius: 4px;        /* Coins arrondis */
+    border: 1px solid #ccc;    /* Bordure grise claire */
+    box-sizing: border-box;    /* Inclut padding dans la largeur */
+}
+
+/* Style du bouton principal */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Bleu */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Effet au survol du bouton */
+button:hover {
+    background-color: #0056b3; /* Bleu foncé */
+}
+
+/* Section pour le bouton "invité" */
+.guest-section {
+    text-align: center;
+    margin-top: 20px; /* Espace au-dessus */
+}
+
+/* Texte "ou" */
+.guest-section p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Bouton/lien pour invité */
+.guest-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d; /* Gris */
+    color: #fff;
+    text-decoration: none;     /* Supprime le soulignement */
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Effet au survol pour le bouton invité */
+.guest-button:hover {
+    background-color: #5a6268; /* Gris plus foncé */
+}

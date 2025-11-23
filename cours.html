@@ -1,0 +1,73 @@
+    <section class="courses-page">
+
+    <h2 class="title">📘 Mes Cours</h2>
+
+    <!-- Cards -->
+    <div class="course-grid">
+
+        <div class="course-card">
+            <h3>Mathématiques</h3>
+            <p>Prof : Dr. Dupont</p>
+            <span class="progress">Progression : 80%</span>
+            <button>Accéder</button>
+        </div>
+
+        <div class="course-card">
+            <h3>Programmation C++</h3>
+            <p>Prof : Mme Laurent</p>
+            <span class="progress">Progression : 65%</span>
+            <button>Accéder</button>
+        </div>
+
+        <div class="course-card">
+            <h3>Mécanique des fluides</h3>
+            <p>Prof : Dr. Njoya</p>
+            <span class="progress">Progression : 40%</span>
+            <button>Accéder</button>
+        </div>
+
+    </div>
+
+    <!-- Bouton d'affichage -->
+    <button id="toggleTable" class="view-table-btn">
+        Voir le tableau détaillé 📊
+    </button>
+
+    <!-- Tableau caché -->
+    <div id="courseTable" class="hidden">
+        <table>
+            <thead>
+                <tr>
+                    <th>Cours</th>
+                    <th>Professeur</th>
+                    <th>Progression</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Mathématiques</td>
+                    <td>Dr. Dupont</td>
+                    <td>80%</td>
+                    <td><button class="small-btn">Ouvrir</button></td>
+                </tr>
+
+                <tr>
+                    <td>Programmation C++</td>
+                    <td>Mme Laurent</td>
+                    <td>65%</td>
+                    <td><button class="small-btn">Ouvrir</button></td>
+                </tr>
+
+                <tr>
+                    <td>Mécanique des fluides</td>
+                    <td>Dr. Njoya</td>
+                    <td>40%</td>
+                    <td><button class="small-btn">Ouvrir</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>

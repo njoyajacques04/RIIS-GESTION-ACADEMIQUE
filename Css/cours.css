@@ -1,0 +1,120 @@
+
+
+.courses-page {
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* GRID DES CARDS */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.course-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+}
+
+.course-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #001638;
+}
+
+.course-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+.progress {
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.course-card .progress {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.course-card button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #001638;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.course-card button:hover {
+    background-color: #003080;
+}
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* BOUTON TABLEAU */
+.view-table-btn {
+    margin-top: 25px;
+    padding: 10px 16px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* TABLEAU CACHE */
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.small-btn {
+    padding: 6px 12px;
+    background: #0066ff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: 1fr; /* une colonne sur petit écran */
+    }
+    .course-card {
+        padding: 15px;
+    }
+}
